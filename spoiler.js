@@ -21,7 +21,7 @@ function setupSpoiler(i) {
             link.html('hide')
             shown = true
         }
-        false
+        return false
     })
     block.append(link)
     block.append(pane)
