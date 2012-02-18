@@ -8,7 +8,7 @@ function setupSpoiler(i) {
     var content = $(this).html()
     var block = $('<div class="spoiler-block"/>')
     var pane = $('<div class="spoiler-content"/>')
-    var link = $('<a class="spoiler-control" href="">show</a>')
+    var link = $('<a class="spoiler-control" href="#">show</a>')
     var shown = false
     link.click(function(ev) {
         if (shown) {
@@ -21,6 +21,7 @@ function setupSpoiler(i) {
             link.html('hide')
             shown = true
         }
+        false
     })
     block.append(link)
     block.append(pane)
